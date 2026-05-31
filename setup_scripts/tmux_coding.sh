@@ -4,7 +4,7 @@ set -euo pipefail
 tmux new -d -s code -n git 
 tmux new-window -t code:1 -n code 
 tmux new-window -t code:2 -n build
-tmux new-window -t code:3 -n config
+tmux new-window -t code:3 -n generalConfig
 
 tmux new -d -s code2 -t code 
 
