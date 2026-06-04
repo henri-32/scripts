@@ -12,7 +12,7 @@ tmux send-keys -t code:0 "git fetch && git status" C-m
 
 tmux send-keys -t code:1 "nvim-server ." C-m 
 
-tmux send-keys -t code:3 " cd ~/Softwareprojekte/myconfig_git && nvim-server ." C-m 
+tmux send-keys -t code:3 " cd ~/Softwareprojekte/myconfig_git && nvim ." C-m 
 
 
 tmux attach -t code2 
