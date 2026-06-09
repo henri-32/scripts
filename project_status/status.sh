@@ -1,7 +1,7 @@
 #!/bin/bash
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-BASE_DIR="$HOME/Softwareprojekte"
+BASE_DIR="$HOME/projects"
 LOG="$SCRIPT_DIR/status.log"
 
 BLUE=$'\033[1;34m'
@@ -9,14 +9,14 @@ RED=$'\033[1;31m'
 RESET=$'\033[0m'
 
 repos=(
-  "HEIZUNGSSTEUERUNG:$BASE_DIR/Arduinoprojekte/Heizungssteuerung_git"
-  "AUTOPILOT:$BASE_DIR/Arduinoprojekte/Autopilot_git"
-  "CONFIGS:$BASE_DIR/myconfig_git"
+  "HEATER:$BASE_DIR/embedded/heatingControl"
+  "AUTOPILOT:$BASE_DIR/embedded/autopilot"
+  "DOTFILES:$BASE_DIR/dotfiles"
   "QMK:$BASE_DIR/qmk_keyboard_flow"
-  "STUDIUM:$BASE_DIR/Studium_git"
+  "STUDY:$BASE_DIR/study"
   "COMMITMESSAGE:$BASE_DIR/commitmessage"
   "OPENAI:$BASE_DIR/openai_git"
-  "SCRIPTS:$BASE_DIR/scripts_git"
+  "SCRIPTS:$BASE_DIR/scripts"
 )
 
 : > "$LOG"
